@@ -1,5 +1,6 @@
 <div id="fileInputBox">
-    <form action="/fileInput" method="post">
-        <span>Click to select a file, or drag a file here.</span>
+    <form action="/fileInput" method="post" enctype="multipart/form-data">
+        <input type="file" name="myfile" placeholder="Click to select a file."/>
+        <button type="submit">Upload</button>
     </form>
 </div>
