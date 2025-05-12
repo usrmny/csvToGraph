@@ -17,7 +17,7 @@ app.set('view engine', 'ejs');
 app.use(express.static('public'))
 
 app.get('', (req,res) => {
-    res.render('partials/fileInput', {})
+    res.render('partials/fileInput', {})// this is body
 })
 
 app.post('/fileInput', upload.any(), async (req, res) => { 
